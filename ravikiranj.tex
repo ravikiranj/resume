@@ -1,0 +1,100 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}   
+
+% moderncv themes
+% style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic}
+% color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{blue}                          
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\firstname{\textcolor{firstnameColor}{Ravikiran}}
+\familyname{\textcolor{familynameColor}{Janardhana}}
+\address{513 CENTRAL AVE, APT T}{MOUNTAIN VIEW, CA 94043}
+\mobile{(919)-448-8740}
+\email{rkjanardhana@gmail.com}
+\homepage{https://www.ravikiranj.net}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+% Define Colors
+\definecolor{familynameColor}{rgb}{0.65,0.65,0.65}
+\definecolor{firstnameColor}{rgb}{0.45,0.45,0.45}
+
+% Resume
+\maketitle
+% Work Experience
+\section{Work Experience}
+\cventry{2013-Present}{Software Engineer II}{TripAdvisor}{San Francisco}{}{
+\begin{itemize}
+\item{Currently working as a full stack engineer on Vacation Rentals Supply team.} 
+\item{Worked on the Internal API and Mobile Web team as a full stack engineer for 3 yrs.}
+\item{Improved performance of several internal APIs by 10-30\% with several layers of caching.}
+\end{itemize}}
+
+\vspace{1mm}
+
+\cventry{Summer 2012}{Software Developer Intern}{Microsoft Corporation}{Redmond}{}{
+\begin{itemize}
+\item{Developed and implemented an algorithm based on AdaBoost (Adaptive Boosting) technique to detect multiple intents (or actions) in natural spoken language.} 
+\end{itemize}}
+
+\vspace{1mm}
+
+\cventry{2009--2011}{Software Engineer}{Yahoo! India}{Bangalore}{}{
+\begin{itemize}
+\item{Developed Facebook, Twitter and LinkedIn modules for My Yahoo! product.} 
+\item{Insrumented My Yahoo! website in order to compute page-views and click through rate.}
+\end{itemize}}
+
+% Education
+\section{Education}
+\cventry{2011-2013}{MS.}{University of North Carolina at Chapel Hill}{Chapel Hill, NC}{}{}
+\cvline{}{Masters in Computer Science}
+
+\vspace{1mm}
+
+\cventry{2005--2009}{BE.}{Peoples Education Society Institute of Technology (PESIT)}{Bangalore, India}{Bachelor of Engineering in Computer Science, \textbf{University Topper}}{}
+
+% Technical Skills
+\section{Technical Skills}
+\cvline{Programming}{Java, C/C++. Python}
+\cvline{Web}{HTML5, Javascript, CSS, jQuery}
+\cvline{Database}{PostgreSQL, MySQL}
+\cvline{Platforms}{Linux, Windows}
+
+% Projects
+\section{Projects}
+\cventry{2014-present}{Hipchat Bot (hbot)}{}{}{}{
+\begin{itemize}
+\item{Based on hubot and boosting developer productivity since 2014.}
+\end{itemize}
+}
+
+\vspace{1mm}
+
+\cventry{Spring 2012}{Twitter Sentiment Analyzer}{}{}{}{
+\begin{itemize}
+\item{Developed a tool to analyze the sentiment (\textit{positive, neutral, negative}) expressed in a user's twitter status messages (See details at \url{www.ravikiranj.net}).}
+\end{itemize}
+}
+
+% Technical Writing and Open Source
+\section{Technical Writing and Open Source}
+\cvline{Tech Blog}{\url{https://www.ravikiranj.net}}
+\cvline{GitHub}{\url{https://github.com/ravikiranj}}
+\end{document}
+
