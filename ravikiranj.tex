@@ -18,8 +18,8 @@
 \usepackage[scale=0.75]{geometry}
 
 % personal data
-\firstname{\textcolor{firstnameColor}{Ravikiran}}
-\familyname{\textcolor{familynameColor}{Janardhana}}
+\firstname{\textcolor{firstNameColor}{Ravikiran}}
+\familyname{\textcolor{familyNameColor}{Janardhana}}
 \address{513 CENTRAL AVE, APT T}{MOUNTAIN VIEW, CA 94043}
 \mobile{(919)-448-8740}
 \email{rkjanardhana@gmail.com}
@@ -31,8 +31,10 @@
 
 \begin{document}
 % Define Colors
-\definecolor{familynameColor}{rgb}{0.65,0.65,0.65}
-\definecolor{firstnameColor}{rgb}{0.45,0.45,0.45}
+\definecolor{firstNameColor}{rgb}{0.45,0.45,0.45}
+\definecolor{familyNameColor}{rgb}{0.60,0.60,0.60}
+% Personal information is controlled by variable called color2 as per https://tex.stackexchange.com/questions/111856/how-to-change-the-color-of-symbols-mobile-email-homepage-etc-in-moderncv
+\definecolor{color2}{rgb}{0.30,0.30,0.30}
 
 % Resume
 \maketitle
@@ -57,7 +59,6 @@
 \cventry{2009--2011}{Software Engineer}{Yahoo! India}{Bangalore}{}{
 \begin{itemize}
 \item{Developed Facebook, Twitter and LinkedIn modules for My Yahoo! product.} 
-\item{Insrumented My Yahoo! website in order to compute page-views and click through rate.}
 \end{itemize}}
 
 % Education
@@ -71,13 +72,15 @@
 
 % Technical Skills
 \section{Technical Skills}
-\cvline{Programming}{Java, C/C++. Python}
+\cvline{Programming}{Java, C/C++, Python}
 \cvline{Web}{HTML5, Javascript, CSS, jQuery}
 \cvline{Database}{PostgreSQL, MySQL}
 \cvline{Platforms}{Linux, Windows}
 
 % Projects
 \section{Projects}
+\cventry{Summer 2017}{SQL Viewer Chrome extension}{}{https://goo.gl/NAfHuw}{}{}
+
 \cventry{2014-present}{Hipchat Bot (hbot)}{}{}{}{
 \begin{itemize}
 \item{Based on hubot and boosting developer productivity since 2014.}
@@ -86,9 +89,9 @@
 
 \vspace{1mm}
 
-\cventry{Spring 2012}{Twitter Sentiment Analyzer}{}{}{}{
+\cventry{Spring 2012}{Twitter Sentiment Analyzer}{}{https://goo.gl/wzp8Zo}{}{
 \begin{itemize}
-\item{Developed a tool to analyze the sentiment (\textit{positive, neutral, negative}) expressed in a user's twitter status messages (See details at \url{www.ravikiranj.net}).}
+\item{Developed a tool to analyze the sentiment expressed in a user's twitter status messages.}
 \end{itemize}
 }
 
